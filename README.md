@@ -31,3 +31,8 @@ Instalamos VSCode, Node.js (instalamos vía nvm), git
 - holaMundo.js
 - servidorHttp.js
 - utilizamos el terminal para lanzar comandos.   
+
+### Día 2
+
+Testing -- Fundamentos
+Ejercicio de testing con validación de Password.
