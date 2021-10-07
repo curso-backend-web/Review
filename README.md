@@ -36,3 +36,38 @@ Instalamos VSCode, Node.js (instalamos vía nvm), git
 
 Testing -- Fundamentos
 Ejercicio de testing con validación de Password.
+
+Pasó el tiempo.....
+#############################################
+
+APIRest con authentication
+0. Planficamos lo que queremos hacer. Aquí se hace un kanban con todas las tareas 
+1. Arquitectura: Crear los directorios y ficheros principales
+  |_ Controller
+  |_ Model
+  |_ Routes
+  |_ app.js
+  |_ server.js
+  
+2. configurar app.js
+  - Montamos los handlers de cada ruta
+  - Añadimos los middlewares de terceros...P.ej: express.json()
+  - exportamos app y lo importamos en server.js
+
+3.  Empezamos a construir por ruta:
+  - Routes: construir el router de la ruta
+      - subrutas y métodos asociados a controllers. Método a método.
+  - Controller: crear el controlador asociado al método.
+      - procesamiento de la request.
+      - pedir los datos al model.
+      - devolver la respuesta.
+  - Model: creamos el método de la clase que recupera los datos.
+  (si fuera necesario se crea directorio data con los datos) 
+  - SE PRUEBA mediante cliente REST.
+4. Incorporamos middleware.
+  Incorporar los middleware de autenticación y gestión de errores requiere modificar los controladores añadiendo el parámetro next.
+  - Middleware de errores
+  - Middleware de auth...
+5. Otras funcionalidades:
+  ...temas de seguridad, temas caché, temas de cors...
+  
