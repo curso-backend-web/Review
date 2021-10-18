@@ -71,3 +71,31 @@ APIRest con authentication
 5. Otras funcionalidades:
   ...temas de seguridad, temas caché, temas de cors...
   
+  
+# Día 1 -- BBDD
+
+Las bbdd están dentro de los SGBD (RDMS). Un software que gestiona los datos, el acceso a los datos, la seguridad de los datos, el rendimiento.
+
+Las bbdd relacionales: almacena datos relacionados entre si, con una estructura en tablas con filas y columnas.
+Las bbdd noSQL no utilizan sql para explotar los datos: documentos, clave-valor, texto, ...
+
+- Físico: el almacenamiento de los datos,
+- Lógico: modelo de relación de los datos almacenados
+- Conceptual: traducción del mundo real al mundo conceptos, base para el modelo lógico.
+
+**El modelo conceptual**
+Se genera un diagrama E/R (entidad-relación) 
+  - Entidades, relaciones y atributos
+ 
+ -Entdades: Los objetos de la vida real que queremos modelar. Sustantivos de las frases que recogemos de los requerimientos.
+ -Relaciones: serían los verbos de las frases.
+ -Palabras tales como mucho, al menos, solo uno,... cardinalidad
+ 
+ Traducir o trasladar el modelo conceptual al modelo lógico-relacional.
+ 
+ 
+
+  
+
+
+  
