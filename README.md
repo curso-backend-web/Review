@@ -94,8 +94,19 @@ Se genera un diagrama E/R (entidad-relación)
  Traducir o trasladar el modelo conceptual al modelo lógico-relacional.
  
  
+# Día 2 -- CONSULTAS
 
-  
+-> SQL embebido en el código.
+-> ORM para comunicarnos en la bbdd.
+
+SQL
+___
+
+qué queremos obtener: SELECT tabla1.columna1, funcion(tabla2.column2),...
+de dónde: FROM tabla1, tabla2, (select otracosa from otra tabla where condicion)
+con qué condiciones: WHERE tabla1.columna1 like 'F%'
+otras cláusulas: información agrupada con GROUP BY, ordenada con ORDER BY, 
+últimas condiciones con HAVING
 
 
   
