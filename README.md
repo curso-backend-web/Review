@@ -102,11 +102,40 @@ Se genera un diagrama E/R (entidad-relación)
 SQL
 ___
 
-qué queremos obtener: SELECT tabla1.columna1, funcion(tabla2.column2),...
-de dónde: FROM tabla1, tabla2, (select otracosa from otra tabla where condicion)
-con qué condiciones: WHERE tabla1.columna1 like 'F%'
-otras cláusulas: información agrupada con GROUP BY, ordenada con ORDER BY, 
-últimas condiciones con HAVING
+__qué queremos obtener__: SELECT tabla1.columna1, funcion(tabla2.column2),...
+__de dónde__: FROM tabla1, tabla2, (select otracosa from otra tabla where condicion)
+__con qué condiciones__: WHERE tabla1.columna1 like 'F%'
+__otras cláusulas__: información agrupada con GROUP BY, ordenada con ORDER BY, 
+__últimas condiciones__ con HAVING
+
+
+
+Consultas de combinaciones de varias tablas.
+**JOINS**
+SELECT t1.nom_col1, t2.nom_col2 from table1 t1, table2 t2 where t1.id = t2.id;
+SELECT t1.nom_col1, t2.nom_col2 from table1 t1 JOIN t2 ON t1.id = t2.id;
+                                from table1 t1 JOIN t2 USING (id);
+
+-INNER-JOIN, LEFT OUTER JOIN, RIGHT OUTER JOIN, EQUI-JOIN, NON-EQUI-JOIN, FULL-JOIN, CROSS-JOIN, NATURAL-JOIN
+
+**UNION**
+select 1 UNION
+select 2
+
+**SUBQUERIES**
+- Aggregated
+- Correlated
+
+referencia: https://mysqltutorial.org
+
+
+ 
+ 
+ 
+ 
+
+
+
 
 
   
