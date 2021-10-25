@@ -129,7 +129,17 @@ select 2
 referencia: https://mysqltutorial.org
 
 
- 
+# Día 3 -- Diseño de la bbd
+
+1. De la idea al papel:
+  - Identificación de entidades, relaciones, atributos, restricciones, etc.
+  - Diseño del modelo lógico-relacional: Pintamos tablas con PK, FK y relaciones.
+2. Generamos scripts de tablas.
+3. Preparamos los datos de partida para ser cargados: json, csv, xml, ... Y se cargan en tablas de preparación.
+4. Preparamos los scripts de carga en las tablas definitivas. Para ello tenemos que relacionar las tablas de preparacións con las tablas que vamos generando con los id definitivos.
+5. Diseño e implementación del resto de artefactos de la bbdd (procedures, triggers, funciones, índices, etc.)
+
+
  
  
  
