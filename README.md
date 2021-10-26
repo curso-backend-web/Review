@@ -139,10 +139,53 @@ referencia: https://mysqltutorial.org
 4. Preparamos los scripts de carga en las tablas definitivas. Para ello tenemos que relacionar las tablas de preparacións con las tablas que vamos generando con los id definitivos.
 5. Diseño e implementación del resto de artefactos de la bbdd (procedures, triggers, funciones, índices, etc.)
 
+# Día 4 -- Conexión de la aplicación a la bbdd
 
- 
- 
- 
+- Las aplicaciones se conectan a las bbdd mediante __drivers__, puente de conexión entre ambos sistemas. Estos drivers son programas que implementan el estándar ODBC, entre otros. Dependiendo del lenguaje de programación usaremos un driver en ese lenguaje. 
+
+- Con MySQL usamos la librería mysql2 que complementa a la librería mysql.
+
+1. Instalación: 
+```bash
+npm i mysql2
+```
+
+2. configuración de la conexión:
+```js
+db = {
+  hostname:'',
+  database:'',
+  user:'',
+  password:''
+}
+
+mysql.createConnection(db);
+
+``` 
+3. Lanzamos las queries con el comando:
+- `mysql.query();`
+- `mysql.execute(sql,params);`
+
+4. Preparación los modelos
+  - Uno por objeto o funcionalidad.
+
+Tasks:
+register -- llamar al proc insert user
+login -- llamar a la función check_user
+getAllMovies -- select * // sustituir el * por los nombres de cols
+getMovieById -- select con condición where
+setMovie -- insert one movie
+updateMovie -- update con condición where
+deleteMovie -- delete con condición where
+getAllUsers -- select where 
+deleteUser -- delete user condición where
+
+escritura, lectura, ejecución sobre las tablas de la db. 
+sin permisos de ddl: eliminar tablas, alter tablas, 
+
+
+
+  
 
 
 
