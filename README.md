@@ -170,16 +170,18 @@ mysql.createConnection(db);
   - Uno por objeto o funcionalidad.
 
 Tasks:
-register -- llamar al proc insert user
-login -- llamar a la función check_user
-getAllMovies -- select * // sustituir el * por los nombres de cols
-getMovieById -- select con condición where
-setMovie -- insert one movie
-updateMovie -- update con condición where
-deleteMovie -- delete con condición where
-getAllUsers -- select where 
-deleteUser -- delete user condición where
+- register -- llamar al proc insert user
+- login -- llamar a la función check_user
+- getAllMovies -- select * // sustituir el * por los nombres de cols
+- getMovieById -- select con condición where
+- setMovie -- insert one movie
+- updateMovie -- update con condición where
+- deleteMovie -- delete con condición where
+- getAllUsers -- select where 
+- deleteUser -- delete user condición where
 
+
+USUARIO de acceso:
 escritura, lectura, ejecución sobre las tablas de la db. 
 sin permisos de ddl: eliminar tablas, alter tablas, 
 
