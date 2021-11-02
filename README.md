@@ -185,6 +185,64 @@ USUARIO de acceso:
 escritura, lectura, ejecución sobre las tablas de la db. 
 sin permisos de ddl: eliminar tablas, alter tablas, 
 
+# Día 5 - MongoDB
+
+BBDD NoSQL 
+  - flexibles: schemaless
+  - BASE: soft consistency, basic disponibility.
+
+Cómo elegir entre relacional o no relacional:
+ - consistencia de los datos vs rapidez
+
+MongoDB es una bbdd noSQL orientada a documentos
+
+Los registros se guardan en documentos de tipo BSON (JSON binario)
+Los documentos se agrupan en colecciones
+Las colecciones en bases de datos
+
+Estructura:
+```json
+{
+_id: ObjectID(),
+name: string,
+age: number -- int32, int64, double, decimal,...
+address:{
+  street: string,
+  num: number,
+},
+hobbies: [one, two, three]
+}
+
+Arquitectura de un servidor mongodb:
+- server: mongod
+- cliente: mongosh (mongoshell)
+- compass
+
+Mongodb en el cloud: MongoAtlas
+
+Para insertar datos: utilizamos mongoimport:
+```bash
+mongoimport --db test --collection micoleccion --file datos.json
+```
+
+Comandos:
+```js
+//Ver db
+show dbs
+
+//crear y o seleccionar una db
+use test
+
+//ver colecciones
+show collections
+
+//ver datos de una coleccion
+db.micoleccion.find({});
+
+
+
+
+
 
 
   
