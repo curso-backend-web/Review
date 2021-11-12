@@ -240,6 +240,29 @@ show collections
 db.micoleccion.find({});
 
 
+# Día 1 M3 - TypeScript
+
+Superset de JavaScript - Extiende JavaScript con TIPADO de datos, POO, Modulos ESNext, etc.
+TypeScript:
+ - Lenguaje,
+ - Compilador que convierte a JavaScript
+ - Linting -- Checkeo de errores en tiempo de desarrollo
+
+Cómo se tipa en TS:
+const variable:<<tipo>> = VALOR;
+
+Tipos básicos: string, number, boolean, Array, etc.
+Otros tipos básicos: any, unknown, never
+
+Tipos complejos: 
+- Customizados: type Nombres = 'Pepe' | 'Sara'  --literales
+                type Edad = string | number
+- Interface: interface Persona{
+                nombre: string;
+                edad: number;
+                address: Address;
+                }
+
 
 
 
